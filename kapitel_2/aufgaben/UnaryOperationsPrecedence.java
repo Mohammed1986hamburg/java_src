@@ -68,6 +68,8 @@ public class UnaryOperationsPrecedence {
 		System.out.println(t);
 		//.............................	
 		
+		
+		//from mac
 		int k1=2;
 		int k2=2;
 		int k =  (k1 & k2);

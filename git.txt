@@ -1,0 +1,22 @@
+cd Desktop/Java_GFN/code_all/OCA/src
+
+...............................
+Create a branch in Git from another branch
+
+ git checkout -b mac master  
+
+
+
+..................................
+update branch from remote master
+
+
+Checkout master 
+
+git pull --rebase origin master
+
+Checkout my_branch
+
+git pull --rebase origin master
+
+.................................

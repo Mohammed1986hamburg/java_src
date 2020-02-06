@@ -29,7 +29,7 @@ public class Datentypen {
 		System.out.println("hoechster Wert fur int:"+ Long.MAX_VALUE);
 		System.out.println("kleinster Wert fur int"+ Long.MIN_VALUE);
 		
-		float floaT = 7.123457f;     // frage
+		float floaT = 7.123457f;     
 		System.out.println("float = "+ floaT);
 		System.out.println("hoechster Wert fur float:"+ Float.MAX_VALUE);
 		System.out.println("kleinster Wert fur float"+ Float.MIN_VALUE);
@@ -38,6 +38,8 @@ public class Datentypen {
 		System.out.println("float = "+ doublE);
 		System.out.println("hoechster Wert fur double:"+ Double.MAX_VALUE);
 		System.out.println("kleinster Wert fur double"+ Double.MIN_VALUE);
+		
+	 
 		
 		
 		

@@ -13,6 +13,16 @@ public class Rechenen {
 		System.out.println("6 / 7.0 = "+ 6/7.0);
 		
 		
+		int a = 3;
+		while (a>0) ;
+			System.out.println("6 / 7.0 = "+ 6/7.0);
+		System.out.println("bb"+ (6+7));
+		
+		String stadt = "hamburg";
+		for (String cityChar : stadt) {
+			System.out.println(cityChar);
+			
+		}
 		
 		
 	}

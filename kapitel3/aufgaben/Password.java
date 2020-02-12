@@ -2,7 +2,7 @@ package kapitel3.aufgaben;
 
 import java.util.Scanner;
 
-public class Passwort {
+public class Password {
 	
 	public static boolean doppeltGross(String pass) {
 		
@@ -55,6 +55,16 @@ public class Passwort {
 		
 	}
 	
+	public static boolean findChar(String myChar, String pass) {
+		if (pass.contains(myChar)) {
+			return true;
+			
+		} else {
+			
+			return false;
+		}
+	}
+	
 	public static void main(String[] args) {
 		
 		Scanner eingabe = new Scanner(System.in); 
@@ -62,18 +72,26 @@ public class Passwort {
 		test:
 			while (!correct) {
 				System.out.print("Enter your password please:  "); 
-				String password = eingabe.next();
+				String password = eingabe.nextLine();
 				if (passwordLength(password)) {
 					continue test;
 				}else if (doppeltGross(password)) {
 					continue test;
 				}else if (doppeltklein(password)) {
 					continue test;
+				}else if (!(findChar("!", password)||findChar("$", password)||findChar("&", password)||findChar("*", password)||findChar("(", password)||findChar(")", password))) {
+					System.out.println("Please use in your password: ! $ & * ( ) ");
+					continue test;
+				}else if (!(findChar("0", password)||findChar("1", password)||findChar("2", password)||findChar("3", password)||findChar("4", password)||findChar("5", password)||findChar("6", password)||findChar("7", password)||findChar("8", password)||findChar("9", password))) {
+					System.out.println("Please use in your password: 0-9 numbers ");
+					continue test;
 				}else {
 					correct = !correct;
+					System.out.println("Done, Saved.");
 				}
-				System.out.println("Done, Saved.");
+				
 			}
+		
 		eingabe.close();
 	}
 

@@ -65,7 +65,8 @@ public class Password {
 		}
 	}
 	
-	public static void main(String[] args) {
+	
+	public final static void main(String[] args) {
 		
 		Scanner eingabe = new Scanner(System.in); 
 		boolean correct = false;

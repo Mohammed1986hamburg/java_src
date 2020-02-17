@@ -27,28 +27,30 @@ public class Test {
 		
 		//....................................................
 		
-		String [] myArray = new String [10];
-		System.out.println(myArray.length);       // no()
-		System.out.println(myArray.length);
+//		String [] myArray = new String [10];
+//		System.out.println(myArray.length);       // no()
+//		System.out.println(myArray.length);
+//		
+//		myArray[0] = "mhd";
+//		System.out.println(myArray[0].length());    // with()
+//		
+//		//...............................................
+//		
+//		
+//		String [] a;					
+////		System.out.println("String [] a: " + a);					
+//		
+//		String [] b = {"s","f"};					//String  anonymous Array 
+//		System.out.println("String []b = {\"s\",\"f\"}: " + b);
+//		
+//		
+//		int [] c;					
+////		System.out.println("int [] c: " + c);
+//		
+//		int [] d = {1,2};					// int anonymous Array 
+//		System.out.println("int [] d = {1,2}: " + d);
 		
-		myArray[0] = "mhd";
-		System.out.println(myArray[0].length());    // with()
 		
-		//...............................................
-		
-		
-		String [] a;					
-//		System.out.println("String [] a: " + a);					
-		
-		String [] b = {"s","f"};					//String  anonymous Array 
-		System.out.println("String []b = {\"s\",\"f\"}: " + b);
-		
-		
-		int [] c;					
-//		System.out.println("int [] c: " + c);
-		
-		int [] d = {1,2};					// int anonymous Array 
-		System.out.println("int [] d = {1,2}: " + d);
 
 	}
 

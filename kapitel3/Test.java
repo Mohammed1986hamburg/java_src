@@ -57,6 +57,7 @@ public class Test {
 //		
 //		int [] d = {1,2};					// int anonymous Array 
 //		System.out.println("int [] d = {1,2}: " + d);
+
 		
 		//int [] a = {1,2,3,4};
 		
@@ -96,4 +97,6 @@ public class Test {
 //
 //	 
 // }
+
+}
 }

@@ -1,8 +1,10 @@
+
+
 import java.util.ArrayList;
 
-public class Test {
+public class Class9D  {
 	
-	public static void main (String...strings ) {
+	public static void main (String[] args) {
 		
 		A a = null;				// reine Referenzvariable verweist auf kein Objekt
 		

@@ -7,7 +7,7 @@ public class Password {
 	public static boolean doppeltGross(String pass) {
 		
 		test :
-		for (char uniChar = '\u0041'; uniChar < '\u005B'; uniChar++) {
+		for (char uniChar = '\u0041'; uniChar <= '\u005B'; uniChar++) {
 			int indexChar = pass.indexOf(uniChar);
 			if (indexChar != -1) {
 				int indexCharDoppelt = pass.indexOf(uniChar, indexChar + 1);
@@ -27,7 +27,7 @@ public class Password {
 	public static boolean doppeltklein(String pass) {
 		
 		test :
-		for (char uniChar = '\u0061'; uniChar < '\u007B'; uniChar++) {
+		for (char uniChar = '\u0061'; uniChar <= '\u007B'; uniChar++) {
 			int indexChar = pass.indexOf(uniChar);
 			if (indexChar != -1) {
 				int indexCharDoppelt = pass.indexOf(uniChar, indexChar + 1);
@@ -65,6 +65,36 @@ public class Password {
 		}
 	}
 	
+	public static boolean grossEnthalten(String pass) {
+		
+		for (char gChar = '\u0041'; gChar <= '\u005A'; gChar++) {
+			
+			if (pass.contains(Character.toString(gChar))) {
+				
+				return true;
+				
+			}
+			
+		}
+		return false;
+	}
+	
+	public static boolean kleinEnthalten(String pass) {
+
+		
+		for (char gChar = '\u0061'; gChar <= '\u007A'; gChar++) {
+					
+					if (pass.contains(Character.toString(gChar))) {
+						
+						return true;
+						
+					}
+					
+				}
+				return false;
+		
+		
+	}
 	
 	public final static void main(String[] args) {
 		
@@ -85,6 +115,12 @@ public class Password {
 					continue test;
 				}else if (!(findChar("0", password)||findChar("1", password)||findChar("2", password)||findChar("3", password)||findChar("4", password)||findChar("5", password)||findChar("6", password)||findChar("7", password)||findChar("8", password)||findChar("9", password))) {
 					System.out.println("Please use in your password: 0-9 numbers ");
+					continue test;
+				}else if (!grossEnthalten(password)) {
+					System.out.println("Please use in your password: GrossEnthalten ");
+					continue test;
+				}else if (!kleinEnthalten(password)) {
+					System.out.println("Please use in your password: KleinEnthalten ");
 					continue test;
 				}else {
 					correct = !correct;

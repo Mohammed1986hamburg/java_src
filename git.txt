@@ -18,5 +18,17 @@ git pull --rebase origin master
 Checkout my_branch
 
 git pull --rebase origin master
+.................................
+update master from remote master after marge
+
+Checkout master 
+
+git pull --rebase origin master
 
 .................................
+update branch from its remote after marge
+
+Checkout mac
+
+git pull --rebase origin mac
+...........................................

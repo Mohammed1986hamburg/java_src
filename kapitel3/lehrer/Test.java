@@ -7,12 +7,11 @@ public class Test {
 	public static void main(String[] data) {
 		// TODO Auto-generated method stub
 		
+		int [][] a = new int[2,3];
 		
-		if (data.length>=1 & (data[0].equals("sound") || data[0].equals("logic")) & data.length<2 ){
-			
-			System.out.println(data[0]);
-		}
-		
+//		if (data.length>=1 & (data[0].equals("sound") || data[0].equals("logic")) & data.length<2 )
+//			System.out.println(data[0]);
+	
 //		String a ="mhd";
 //		
 //		System.out.println(a);
@@ -83,7 +82,7 @@ public class Test {
 //		
 //		
 //
-}
+
 //	
 //	//ava.lang.NullPointerException
 // public int add(Integer b, Integer c) {

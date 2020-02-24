@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="11.91" multi-file="no" uid="simpa9a4319b7d794f18ba2eda6c61a68545">
+  <meta>
+    <name>Lotterie</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="UmlClass" />
+        <value>11</value>
+      </counter>
+      <counter>
+        <item-type stereotype="interface" type-id="class" type="UmlClass" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="package" type="UmlPackage" />
+        <value>2</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>477</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="UmlClass" />
+        <value>13</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="UmlGeneralization" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment" type="UmlComment" />
+        <value>5</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="UmlCommentConnector" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="UniversalConnector" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="package" type="UmlPackage" />
+        <value>3</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>8</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-732349d5ba324244b328c16bdb7794be" name="" task-id-sequence="0">
+    <persons>
+      <person id="P58083720122045f6849d146197640d5a">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-039a883504c744798a8d010610fb31f7" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="int" tid="" name="int" description="" />
+      <type id="boolean" tid="" name="boolean" description="" />
+    </custom-types>
+  </types>
+  <items>
+    <item id="3890019f9efb4c859c818656b804a54b" cid="CMT001" type="comment" name="Comment" style-class="" owner="092cd72f70d942eb9bc86c4dad022669" visibility="package" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 09:41:41">
+      <comment>Auswertung der Anzahl richtig getippter Zahlen --&gt; Formeln zur Berechnung ALLER richtigen Tipps und Spieler abzüglich Gewinnprovision Spielbetreiber</comment>
+    </item>
+    <item id="di393a127ac9cb43eb9a99ade65d99406c8373" cid="CN001" type="comment-connector" name="" style-class="" visibility="package" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 09:41:41" from="3890019f9efb4c859c818656b804a54b" to="13334e5c2b1c4c4dbde6c83aeaecbf7c" />
+    <item id="fd713ff2029f4888959a4d859dc7b4f6" cid="CMT002" type="comment" name="Comment" style-class="" owner="d41dd993eb1b4ba38a7f967a7d777954" visibility="package" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:13:49">
+      <style style-name="" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF000000" font="Verdana;10;B" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF000000" font="Verdana;9;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="forward-diagonal" color="#FFFFFFFF" color2="#FFBFBFBF" />
+        <border color="#FFD500D5" width="4" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FF000000" font="Verdana;10;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FF000000" font="Verdana;9;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="vertical-linear" color="#FF1E90FF" color2="#FF87CEFA" />
+            <border color="#FF00008B" width="1" dash-style="Solid" />
+            <label-connector color="#FF000000" width="1" dash-style="Solid" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <comment>Abstrakte Klasse
+-- Darf nicht instanziiert werden
+-- Darf NICHT final sein
+-- Darf abstrakte Methoden haben
+-- Darf andere abstrakte Klassen erweitern (Konkrete oder abstrakte Klassen ) 
+</comment>
+    </item>
+    <item id="di61b6b283617f47939d06489396d0fe966376" cid="CN002" type="comment-connector" name="" style-class="" visibility="package" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:13:49" from="fd713ff2029f4888959a4d859dc7b4f6" to="2056e6db996248f4bb8f89278651106e" />
+    <item id="5e7487373edb4325a10046d349010fe1" cid="CMT003" type="comment" name="Comment" style-class="" owner="d41dd993eb1b4ba38a7f967a7d777954" visibility="package" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:16:44">
+      <style style-name="" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF000000" font="Verdana;8;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF000000" font="Verdana;8;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="forward-diagonal" color="#FFFFD700" color2="#FFFFFFE0" />
+        <border color="#FFFFA500" width="1" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FF000000" font="Verdana;10;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FF000000" font="Verdana;9;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="vertical-linear" color="#FF1E90FF" color2="#FF87CEFA" />
+            <border color="#FF00008B" width="1" dash-style="Solid" />
+            <label-connector color="#FF000000" width="1" dash-style="Solid" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <comment>Abstrakte Methoden
+-- Dürfen nicht final sein
+-- Haben keinen Methodenkörper
+-- Dürfen nicht private sein
+-- Müssen überschrieben werden (@Override)
+-- Signatur darf nicht verändert werden beim überschreiben
+-- Access modifier gleich oder weiter 
+------------------------------------
+private --&gt; package private --&gt; protected --&gt; public</comment>
+    </item>
+    <item id="didc3a5c70c12f4e52bb5a590e216742da6075" cid="CN003" type="comment-connector" name="" style-class="" visibility="package" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:16:44" from="5e7487373edb4325a10046d349010fe1" to="2056e6db996248f4bb8f89278651106e" />
+    <item id="6acda443e87640eb869e218770300233" cid="CMT004" type="comment" name="Comment" style-class="" owner="d41dd993eb1b4ba38a7f967a7d777954" visibility="package" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:21:20">
+      <style style-name="" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF000000" font="Verdana;11;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF000000" font="Verdana;10;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="forward-diagonal" color="#FF80FF80" color2="#FF00AA00" />
+        <border color="#FFFFA500" width="1" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FF000000" font="Verdana;10;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FF000000" font="Verdana;9;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="vertical-linear" color="#FF1E90FF" color2="#FF87CEFA" />
+            <border color="#FF00008B" width="1" dash-style="Solid" />
+            <label-connector color="#FF000000" width="1" dash-style="Solid" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <comment>Concrete Class (Konkrete Klasse) </comment>
+    </item>
+    <item id="di97d721a7b0134ab1975bec9d35d895386984" cid="CN004" type="comment-connector" name="" style-class="" visibility="package" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:21:20" from="6acda443e87640eb869e218770300233" to="bcc89a143c914239893ea02443d42b8d" />
+  </items>
+  <models>
+    <model id="p9a94197f16e74b78852e285b13a1bd23_746319457" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>02/24/2020 08:51:52</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p6b937debc2bf40fa828129ef0eaf01da_819915866" name="cd_AnalyseLotto" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-477,-296" zoom="1.2">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>02/24/2020 08:51:52</creation-date>
+          <change-date>02/24/2020 11:28:30</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="19ff4b591e574b26b6147aa9bda0f68c" cid="C008" type="class" name="Eurojackpot" style-class="" owner="d41dd993eb1b4ba38a7f967a7d777954" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 09:35:28">
+            <operations>
+              <operation id="o324c53b5c23e4b8aa9e00c0bee567aeb693" cid="ELEM005" name="checkDoppelteWerte" creation-date="01/01/0001 00:00:00" type="boolean" type-id="boolean" visibility="package">
+                <parameters>
+                  <parameter id="pb4b561c5a1a34a0392d17ffb74bd2bfe" name="zahlen" type="int" type-id="int" multiplicity="*" />
+                </parameters>
+              </operation>
+              <operation id="od18dca8f74ec4368adf7febd49a2923d690" cid="ELEM006" name="Eurojackpot" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="private">
+                <parameters>
+                  <parameter id="pd2df7b1a05a14eb6abcc2848c4dbe840" name="zahlen" type="int" type-id="int" />
+                  <parameter id="p9b5dcbe60ce84be89ee6c466cf4ea7a9" name="werteBereich" type="int" type-id="int" />
+                </parameters>
+              </operation>
+              <operation id="o0e5d62fe7f94421a962fbe59df218d10486" cid="ELEM007" name="Eurojackpot" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="2056e6db996248f4bb8f89278651106e" cid="C006" type="class" name="Lottosystem &lt;&lt;abstract&gt;&gt;" style-class="" owner="d41dd993eb1b4ba38a7f967a7d777954" is-abstract="true" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 09:34:52">
+            <style style-name="Default" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+              <text-style type="name" use-defaults="false" color="#FF000000" font="Verdana;11;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="text" use-defaults="false" color="#FF000000" font="Verdana;10;B" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+              <text-style type="tagged-value" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="stereotype" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <background type="forward-diagonal" color="#FFD500D5" color2="#FFFFFFFF" />
+              <border color="#FF000000" width="1" dash-style="Solid" />
+              <label-connector color="#80000000" width="1" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                  <text-style type="name" use-defaults="false" color="#FFFFFFFF" font="Verdana;10;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="text" use-defaults="false" color="#FFFFFFFF" font="Verdana;9;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                  <text-style type="tagged-value" use-defaults="false" color="#FFFFFFFF" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="stereotype" use-defaults="false" color="#FFFFFFFF" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <background type="solid" color="#FF2B508B" color2="#FF87CEFA" />
+                  <border color="#FF2B508B" width="1" dash-style="Solid" />
+                  <label-connector color="#FF000000" width="1" dash-style="Solid" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <operations>
+              <operation id="o792e8b29c97b417085c8d000e66ee9ef910" cid="ELEM001" name="zahlenGenerator" creation-date="01/01/0001 00:00:00" type="int" type-id="int" multiplicity="*" visibility="public">
+                <parameters>
+                  <parameter id="p3a2ef86d0fdb4b1b9259ea1832b52f69" name="anzahlZahlen" type="int" type-id="int" />
+                  <parameter id="p4fb80c52ebf244f5bfe817b693926097" name="zahlenBereich" type="int" type-id="int" />
+                </parameters>
+              </operation>
+              <operation id="of34e1dd207244410a0e2f5b6549445ea252" cid="ELEM002" name="checkDoppelteWerte" creation-date="01/01/0001 00:00:00" type="boolean" type-id="boolean" visibility="package" abstract="true">
+                <parameters>
+                  <parameter id="pe22cc2d330a94178af47111a01464833" name="zahlen" type="int" type-id="int" multiplicity="*" />
+                </parameters>
+              </operation>
+              <operation id="oa6e99570bb6944499bda9e248ddd1a17426" cid="ELEM003" name="erzeugeReihe" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="2b2acd638d1d4f8885d54e2d4ad66fb5" cid="GNR001" type="generalization" name="" style-class="" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 09:35:44" from="bcc89a143c914239893ea02443d42b8d" to="2056e6db996248f4bb8f89278651106e" />
+          <item id="bcc89a143c914239893ea02443d42b8d" cid="C007" type="class" name="SechsAusNeundVierzig" style-class="" owner="d41dd993eb1b4ba38a7f967a7d777954" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 09:35:04">
+            <operations>
+              <operation id="oe7f72cbb98c14da8a3d2c7c475e86b27631" cid="ELEM004" name="checkDoppelteWerte" creation-date="01/01/0001 00:00:00" type="boolean" type-id="boolean" visibility="package">
+                <parameters>
+                  <parameter id="p18df2215036e423ca04037e7be98ec4f" name="zahlen" type="int" type-id="int" multiplicity="*" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="505f17a4029948f58247ee4d88a55025" cid="GNR002" type="generalization" name="" style-class="" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 09:35:49" from="19ff4b591e574b26b6147aa9bda0f68c" to="2056e6db996248f4bb8f89278651106e" />
+          <item id="13334e5c2b1c4c4dbde6c83aeaecbf7c" cid="C009" type="class" name="Gewinntabelle" style-class="" owner="092cd72f70d942eb9bc86c4dad022669" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 09:38:30" />
+          <item id="di02d873a913fe455199203950d9db876e8832" cid="CN005" type="comment-connector" name="" style-class="" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:21:50" from="6acda443e87640eb869e218770300233" to="19ff4b591e574b26b6147aa9bda0f68c" />
+          <item id="09b7325b1fda432d90524d08940905f5" cid="C010" type="class" name="Einzahlen" style-class="" owner="092cd72f70d942eb9bc86c4dad022669" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:25:58" />
+          <item id="c662d4554873416085ec77c6445c9a19" cid="C011" type="class" name="Spieler" style-class="" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:26:20" />
+          <item id="86a9adc01bb54453991ef7b315a5e7ad" cid="C012" type="class" name="Auszahlen" style-class="" owner="092cd72f70d942eb9bc86c4dad022669" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:27:06" />
+          <item id="092cd72f70d942eb9bc86c4dad022669" cid="PKG001" type="package" name="finanzVerwaltung" style-class="" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:27:28" />
+          <item id="d41dd993eb1b4ba38a7f967a7d777954" cid="PKG002" type="package" name="spiele" style-class="" visibility="package" change-tracking-state="added" creator="P58083720122045f6849d146197640d5a" creation-date="02/24/2020 11:28:30" />
+        </abstract-items>
+        <layer id="36530eeaefcd4bc8a8cba7a7ba9e0810" name="Default" visible="true" enabled="true" locked="false">
+          <item id="d41dd993eb1b4ba38a7f967a7d777954" iid="c13f2147ac2a4752aa8272bc2ebe77a6" creation-date="02/24/2020 11:28:30" order-index="19" type="entity">
+            <layout ax="-385" ay="-253" awidth="883" aheight="589.5" x="-385" y="-253" width="883" height="589.5" container-layout="simple" />
+          </item>
+          <item id="092cd72f70d942eb9bc86c4dad022669" iid="bbc050eade63489f8ead81cef21490cf" creation-date="02/24/2020 11:27:28" order-index="18" type="entity">
+            <layout ax="509" ay="-253" awidth="419" aheight="514" x="509" y="-253" width="419" height="514" />
+          </item>
+          <item id="2056e6db996248f4bb8f89278651106e" iid="3e10148d6b424b01b9fea64e3e0aa270" container="d41dd993eb1b4ba38a7f967a7d777954" container-iid="c13f2147ac2a4752aa8272bc2ebe77a6" creation-date="02/24/2020 09:34:52" order-index="0" type="entity">
+            <layout ax="-76" ay="-215" awidth="525" aheight="139" x="-76" y="-215" width="525" height="139" />
+            <class />
+          </item>
+          <item id="bcc89a143c914239893ea02443d42b8d" iid="c38cffc171b1479a9b1aeae3378f57ef" container="d41dd993eb1b4ba38a7f967a7d777954" container-iid="c13f2147ac2a4752aa8272bc2ebe77a6" anchor="None" creation-date="02/24/2020 09:35:04" order-index="1" type="entity">
+            <layout ax="-171" ay="147" awidth="287.5" aheight="81" x="-171" y="147" width="287.5" height="81" />
+            <class />
+          </item>
+          <item id="19ff4b591e574b26b6147aa9bda0f68c" iid="cdb9aa91d76c4ed989ea9c93921d66b2" container="d41dd993eb1b4ba38a7f967a7d777954" container-iid="c13f2147ac2a4752aa8272bc2ebe77a6" creation-date="02/24/2020 09:35:28" order-index="2" type="entity">
+            <layout ax="148.5" ay="64" awidth="330.5" aheight="100" x="148.5" y="64" width="330.5" height="100" />
+            <class />
+          </item>
+          <item id="2b2acd638d1d4f8885d54e2d4ad66fb5" iid="c5203d442c8a4211bfaabbaed34d5662" creation-date="02/24/2020 09:35:44" order-index="3" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="-27" y1="147" x2="82" y2="-76" start-border-pos="0.125" end-border-pos="0.674761906266212" name-position="0,0">
+              <points>
+                <point x="-27" y="147" />
+                <point x="82" y="-76" />
+              </points>
+            </layout>
+            <relation from="bcc89a143c914239893ea02443d42b8d" from-iid="c38cffc171b1479a9b1aeae3378f57ef" to="2056e6db996248f4bb8f89278651106e" to-iid="3e10148d6b424b01b9fea64e3e0aa270" />
+          </item>
+          <item id="505f17a4029948f58247ee4d88a55025" iid="43d720530b544b00b3090750675d7a6d" creation-date="02/24/2020 09:35:49" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="312" y1="64" x2="299" y2="-76" start-border-pos="0.123737373737374" end-border-pos="0.571190476417542" name-position="0,0">
+              <points>
+                <point x="312" y="64" />
+                <point x="299" y="-76" />
+              </points>
+            </layout>
+            <relation from="19ff4b591e574b26b6147aa9bda0f68c" from-iid="cdb9aa91d76c4ed989ea9c93921d66b2" to="2056e6db996248f4bb8f89278651106e" to-iid="3e10148d6b424b01b9fea64e3e0aa270" />
+          </item>
+          <item id="13334e5c2b1c4c4dbde6c83aeaecbf7c" iid="9bfbcfb718f54417b13935e7d80f199b" container="092cd72f70d942eb9bc86c4dad022669" container-iid="bbc050eade63489f8ead81cef21490cf" creation-date="02/24/2020 09:38:30" order-index="5" type="entity">
+            <layout ax="648.5" ay="-215" awidth="140" aheight="115" x="648.5" y="-215" width="140" height="115" />
+            <class />
+          </item>
+          <item id="3890019f9efb4c859c818656b804a54b" iid="b10a7eb3b9c94e939fc64871e76e7390" container="092cd72f70d942eb9bc86c4dad022669" container-iid="bbc050eade63489f8ead81cef21490cf" creation-date="02/24/2020 09:41:41" order-index="6" type="entity">
+            <layout ax="565.5" ay="-59" awidth="306" aheight="100" x="565.5" y="-59" width="306" height="100" />
+          </item>
+          <item id="di393a127ac9cb43eb9a99ade65d99406c8373" iid="65657c8229fc41d9b6bae39fb9cf6c1c" creation-date="02/24/2020 09:41:41" order-index="7" type="comment-connector">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="718" y1="-59" x2="718" y2="-100" start-border-pos="0.124591503267974" end-border-pos="0.625892857142857" name-position="0,0">
+              <points>
+                <point x="718" y="-59" />
+                <point x="718" y="-100" />
+              </points>
+            </layout>
+            <relation from="3890019f9efb4c859c818656b804a54b" from-iid="b10a7eb3b9c94e939fc64871e76e7390" to="13334e5c2b1c4c4dbde6c83aeaecbf7c" to-iid="9bfbcfb718f54417b13935e7d80f199b" />
+          </item>
+          <item id="fd713ff2029f4888959a4d859dc7b4f6" iid="70934bdbc65b42c08de2e4d63d02c540" container="d41dd993eb1b4ba38a7f967a7d777954" container-iid="c13f2147ac2a4752aa8272bc2ebe77a6" creation-date="02/24/2020 11:13:49" order-index="8" type="entity">
+            <layout ax="-367" ay="-215" awidth="279" aheight="100" x="-367" y="-215" width="279" height="100" />
+          </item>
+          <item id="di61b6b283617f47939d06489396d0fe966376" iid="2d641b977255430cb482ff728516099e" creation-date="02/24/2020 11:13:49" order-index="9" type="comment-connector">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="-88" y1="-159" x2="-76" y2="-158" start-border-pos="0.391062812805176" end-border-pos="0.897525458027133" name-position="0,0">
+              <points>
+                <point x="-88" y="-159" />
+                <point x="-76" y="-158" />
+              </points>
+            </layout>
+            <relation from="fd713ff2029f4888959a4d859dc7b4f6" from-iid="70934bdbc65b42c08de2e4d63d02c540" to="2056e6db996248f4bb8f89278651106e" to-iid="3e10148d6b424b01b9fea64e3e0aa270" />
+          </item>
+          <item id="5e7487373edb4325a10046d349010fe1" iid="ccab4964c4fe4748975629ef683094fe" container="d41dd993eb1b4ba38a7f967a7d777954" container-iid="c13f2147ac2a4752aa8272bc2ebe77a6" creation-date="02/24/2020 11:16:44" order-index="10" type="entity">
+            <layout ax="-367" ay="-45" awidth="347" aheight="146" x="-367" y="-45" width="347" height="146" />
+          </item>
+          <item id="didc3a5c70c12f4e52bb5a590e216742da6075" iid="abf9f24fca5e4fe8826274d29d272b81" creation-date="02/24/2020 11:16:44" order-index="11" type="comment-connector">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="-135" y1="-45" x2="-76" y2="-119" start-border-pos="0.166857804619957" end-border-pos="0.827500000596046" name-position="0,0">
+              <points>
+                <point x="-135" y="-45" />
+                <point x="-76" y="-119" />
+              </points>
+            </layout>
+            <relation from="5e7487373edb4325a10046d349010fe1" from-iid="ccab4964c4fe4748975629ef683094fe" to="2056e6db996248f4bb8f89278651106e" to-iid="3e10148d6b424b01b9fea64e3e0aa270" />
+          </item>
+          <item id="6acda443e87640eb869e218770300233" iid="ae2d83373b0c42aeadf8a64be8ddb8ef" container="d41dd993eb1b4ba38a7f967a7d777954" container-iid="c13f2147ac2a4752aa8272bc2ebe77a6" creation-date="02/24/2020 11:21:20" order-index="12" type="entity">
+            <layout ax="27" ay="291" awidth="265" aheight="22" x="27" y="291" width="265" height="22" />
+          </item>
+          <item id="di97d721a7b0134ab1975bec9d35d895386984" iid="9a31765b8a5b42b782c1b555e221fe8c" creation-date="02/24/2020 11:21:20" order-index="13" type="comment-connector">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="142" y1="291" x2="39" y2="228" start-border-pos="0.108449194566259" end-border-pos="0.567726924730384" name-position="0,0">
+              <points>
+                <point x="142" y="291" />
+                <point x="39" y="228" />
+              </points>
+            </layout>
+            <relation from="6acda443e87640eb869e218770300233" from-iid="ae2d83373b0c42aeadf8a64be8ddb8ef" to="bcc89a143c914239893ea02443d42b8d" to-iid="c38cffc171b1479a9b1aeae3378f57ef" />
+          </item>
+          <item id="di02d873a913fe455199203950d9db876e8832" iid="9fa6e7192df34723b1e53d80bbcce239" creation-date="02/24/2020 11:21:50" order-index="14" type="comment-connector">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="185" y1="291" x2="312" y2="164" start-border-pos="0.149159663865546" end-border-pos="0.626262626262626" name-position="0,0">
+              <points>
+                <point x="185" y="291" />
+                <point x="312" y="164" />
+              </points>
+            </layout>
+            <relation from="6acda443e87640eb869e218770300233" from-iid="ae2d83373b0c42aeadf8a64be8ddb8ef" to="19ff4b591e574b26b6147aa9bda0f68c" to-iid="cdb9aa91d76c4ed989ea9c93921d66b2" />
+          </item>
+          <item id="09b7325b1fda432d90524d08940905f5" iid="525d53b1ae4645d59ef9558239e4bf92" container="092cd72f70d942eb9bc86c4dad022669" container-iid="bbc050eade63489f8ead81cef21490cf" creation-date="02/24/2020 11:25:58" order-index="15" type="entity">
+            <layout ax="543" ay="110.5" awidth="164" aheight="81" x="543" y="110.5" width="164" height="81" />
+            <class />
+          </item>
+          <item id="c662d4554873416085ec77c6445c9a19" iid="faad6b33dda44cb488b0827d7f70c34c" creation-date="02/24/2020 11:26:20" order-index="16" type="entity">
+            <layout ax="669" ay="302" awidth="164" aheight="81" x="669" y="302" width="164" height="81" />
+            <class />
+          </item>
+          <item id="86a9adc01bb54453991ef7b315a5e7ad" iid="55a4ac20b5994c258a54852500043bd1" container="092cd72f70d942eb9bc86c4dad022669" container-iid="bbc050eade63489f8ead81cef21490cf" creation-date="02/24/2020 11:27:06" order-index="17" type="entity">
+            <layout ax="767" ay="101" awidth="119" aheight="100" x="767" y="101" width="119" height="100" />
+            <class />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>

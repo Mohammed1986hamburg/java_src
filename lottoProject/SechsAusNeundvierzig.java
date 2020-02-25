@@ -1,24 +1,38 @@
-package lottoProject;
+package oca.lottoProject;
 
 import java.util.Arrays;
 
 public class SechsAusNeundvierzig extends Lottosystem {
+
+	int zusatzzahl ;
+	int[] _6Aus49 ;
+	
+	public SechsAusNeundvierzig(){
+		
+		}
+	
+	public SechsAusNeundvierzig(int zahl, int bereich) {
+		super(zahl,bereich);
+		_6Aus49 = super.getGewinnZahlen();
+	
+	}
+	public SechsAusNeundvierzig(int zahl) {
+		super(zahl);
+		this.zusatzzahl = zahl;
+	}
+	
+	
 	
 	public static void main(String[] args) {
-		SechsAusNeundvierzig spiel = new SechsAusNeundvierzig();
+		SechsAusNeundvierzig spiel =  new SechsAusNeundvierzig();
+
 		
-		System.out.println(Arrays.toString(spiel.zahlenGenerator(6, 49)));
+		System.out.println(Arrays.toString(spiel.getGewinnZahlen()));
 		
-//		Lottosystem lotto = new Lottosystem();    // can not beacuse class Lottosystem is abstract
-		
-		Lottosystem lotto = new SechsAusNeundvierzig();
-		System.out.println(Arrays.toString(lotto.zahlenGenerator(3, 30)));
-		
-	}
-	
-	@Override
-	boolean checkDoppeltewerte(int[] zahlen) {
-		return true;
 	}
 
+
+//	boolean checkDoppelteWerte(int[] zahlen) {return false;}
+
+	
 }

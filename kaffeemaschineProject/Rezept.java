@@ -2,7 +2,6 @@ package kaffeemaschineProject;
 
 public class Rezept {
 	
-	
 	static double wasser = 0.2;
 	static double kaffee = 0.02;
 	static double kakaoPul = 0.02;

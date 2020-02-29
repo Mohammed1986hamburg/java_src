@@ -1,6 +1,5 @@
 package kaffeemaschineProject;
 
-import java.awt.Label;
 import java.util.Scanner;
 
 public class KaffeeMaschine {
@@ -10,9 +9,6 @@ public class KaffeeMaschine {
 		Scanner eingabe = new Scanner(System.in);
 		String wert;
 		
-		
-//		System.out.println("  Kaffee schwarz. 1\n "+" Kaffee Zucker. 2\n "+" Kaffee Milch. 3\n "+" Kaffee Milch und Zucker. 4\n "+" Kakao. 5\n "+" Nichts. 0\n ");
-		Label agin;
 		do {
 			System.out.println("  Kaffee schwarz. 1\n "+" Kaffee Zucker. 2\n "+" Kaffee Milch. 3\n "+" Kaffee Milch und Zucker. 4\n "+" Kakao. 5\n "+" Nichts. 0\n ");
 			System.out.print("Ich möchte: ");

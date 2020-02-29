@@ -1,13 +1,19 @@
-package kapitel3;
+package kapitel3.lehrer;
 
-
+import java.time.LocalDate;
+import java.time.Period;
 
 public class Test {
 
 	public static void main(String[] data) {
+		Period a = Period.of(1, 0, 4);
+		System.out.println(a);
+		LocalDate d = LocalDate.of(1986, 8, 17).of(1999, 2, 4);
+		System.out.println(d);
+		
 		// TODO Auto-generated method stub
 		
-		int [][] a = new int[2,3];
+		
 		
 //		if (data.length>=1 & (data[0].equals("sound") || data[0].equals("logic")) & data.length<2 )
 //			System.out.println(data[0]);

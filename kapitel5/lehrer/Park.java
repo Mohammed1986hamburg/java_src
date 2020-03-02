@@ -1,4 +1,4 @@
-package kapitel5.lehrer;
+package oca.interfaces;
 
 class Park{
 	 public static void main(String[] args) {
@@ -8,6 +8,8 @@ class Park{
 		
 		((Laufen)fifi).entfernung(fifi);
 		((Hund)(Laufen)fifi).bellen(fifi);
+		
+		Laufen mize = new Katze();
 		
 		rex.entfernung(rex);
 		((Hund)rex).bellen(rex);

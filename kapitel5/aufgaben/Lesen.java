@@ -1,7 +1,13 @@
-package kapitel5.aufgaben;
+package oca.uebungInterface;
 
-public interface Lesen {
+public abstract interface Lesen {
 	
-	void lesen();
 
+	String wasWirdgelesen(Lesen objekt);
+	
+	int lesedauer(Lesen objekt);
+	
+	default void beenden() {
+		System.out.println("Zu ende gelesen");
+	}
 }

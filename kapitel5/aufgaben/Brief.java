@@ -1,17 +1,34 @@
-package kapitel5.aufgaben;
+package oca.uebungInterface;
+
+import java.time.LocalDate;
 
 public class Brief implements Lesen, Schreiben {
 
 	@Override
-	public void schreiben(Schreiben text) {
-		// TODO Auto-generated method stub
-
+	public void beenden() {}
+	
+	@Override
+	public String wasWirdGeschrieben(Schreiben text) {
+		
+		return null;
 	}
 
 	@Override
-	public void lesen() {
-		// TODO Auto-generated method stub
+	public LocalDate datum(Schreiben text) {
+		
+		return null;
+	}
 
+	@Override
+	public String wasWirdgelesen(Lesen objekt) {
+		
+		return null;
+	}
+
+	@Override
+	public int lesedauer(Lesen objekt) {
+		
+		return 0;
 	}
 
 }

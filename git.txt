@@ -1,4 +1,4 @@
-cd Desktop/Java_GFN/code_all/OCA/src
+cd /c/Users/m.wahba/Desktop/Java_GFN/code_all/OCA/src
 
 ...............................
 Create a branch in Git from another branch

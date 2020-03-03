@@ -1,7 +1,15 @@
-package kapitel5.aufgaben;
+package oca.uebungInterface;
+
+import java.time.LocalDate;
 
 public interface Schreiben {
 	
-	void schreiben(Schreiben text);
+	String wasWirdGeschrieben(Schreiben text);
+	
+	LocalDate datum(Schreiben text );
+	
+	default void beenden() {
+		System.out.println("Text ist beendet");
+	}
 
 }

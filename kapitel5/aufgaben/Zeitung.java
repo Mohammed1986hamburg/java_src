@@ -1,23 +1,42 @@
-package kapitel5.aufgaben;
+package oca.uebungInterface;
+
+import java.time.LocalDate;
 
 public class Zeitung extends Literatur {
-	
-	public void verschenken() {     
-		// TODO Auto-generated method stub
 
-	}
-	
-	public void wegwerfen() { // throw away
-		// TODO Auto-generated method stub
-
-	}
-
-	
-	@Override
-	public void kaufen() {
-		// TODO Auto-generated method stub
+	public Zeitung(String kategorie, String titel, double preis) {
+		super(kategorie, titel, preis);
 		
 	}
-	
+
+	@Override
+	public String wasWirdgelesen(Lesen objekt) {
+		
+		return null;
+	}
+
+	@Override
+	public int lesedauer(Lesen objekt) {
+		
+		return 0;
+	}
+
+	@Override
+	public String wasWirdGeschrieben(Schreiben text) {
+		
+		return null;
+	}
+
+	@Override
+	public LocalDate datum(Schreiben text) {
+		
+		return null;
+	}
+
+	@Override
+	public void kaufen() {
+		
+		
+	}
 
 }

@@ -25,13 +25,14 @@ public class Test {
 //		else {
 //			System.out.println(" no " + " s is " + s2 + " t is " + s3);
 //		}
-		
-		String x = "hello world";
-		String y = " hello world".trim();
-		System.out.println(x==y);
-		int [][][] a = new int[0][][0];
-//		System.out.println(Arrays.toString(a[2]));
-		
+	    int iint=5;
+	    Integer b = iint;
+	    long llong=iint;
+	    Long LLong=(long )b;
+	    float f =5;
+	    
+	    
+	    
 		
 
 	}

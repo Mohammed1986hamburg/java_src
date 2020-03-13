@@ -1,0 +1,3 @@
+http://www.falkhausen.de/Java-8/java.lang/Exceptions.html
+
+Grafische Darstellung aller Exception Klassen und verlinkt mit Kurzinfo

@@ -1,4 +1,4 @@
-package oca.inheritance;
+package kapitel4.lehrer.inheritance;
 
 public class Apfel extends Kernobst {
 	static String gattung = "Apfel";

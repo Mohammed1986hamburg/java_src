@@ -1,10 +1,10 @@
-package oca.inheritance;
+package kapitel4.lehrer.inheritance;
 
 public  abstract class Frucht {
 
 	static String gattung = "Frucht";
 	
-	private String obstname = "Früchte";
+	private String obstname = "Frï¿½chte";
 
 	// constructor
 	public Frucht( ){
@@ -25,7 +25,7 @@ public  abstract class Frucht {
 		System.out.println("Ich esse " + obstname );
 	}
 	public static void kaufen() {
-		System.out.println("Früchte kaufen");
+		System.out.println("Frï¿½chte kaufen");
 	}
 }
 

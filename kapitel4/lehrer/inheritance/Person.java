@@ -1,4 +1,4 @@
-package oca.inheritance;
+package kapitel4.lehrer.inheritance;
 
 public class Person {
 
@@ -10,7 +10,7 @@ public class Person {
 		
 //		paul.hatHunger(apfel);
 //		paul.einkaufen(gala);
-	
+		
 		((Apfel)gala).kaufen();
 		gala.essen();
 

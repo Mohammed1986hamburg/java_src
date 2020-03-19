@@ -1,12 +1,13 @@
-package oca.inheritance;
+package kapitel4.lehrer.inheritance;
 
-
-public class Birne extends Kernobst {
-	static String gattung = "Birne";
-	String obstname = "Birne Helene";
+public class Kernobst extends Frucht {
+	static String gattung = "Kernobst";
+	String obstname = "Kernobst";
 	
-	public Birne() {}
+	public Kernobst( ) {
 		
+		
+	}
 	public void essen() {
 		System.out.println(" Ich esse  " + obstname);
 	}
@@ -15,7 +16,7 @@ public class Birne extends Kernobst {
 		System.out.println(" Ich esse " + f );
 	}
 	
-	 public static  void kaufen() {
+	public static void kaufen() {
 		System.out.println(" kaufe :" + gattung);
 	}
 }

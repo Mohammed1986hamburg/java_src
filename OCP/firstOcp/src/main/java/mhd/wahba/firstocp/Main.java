@@ -1,27 +1,29 @@
 
 package mhd.wahba.firstocp;
 
-import java.util.*;
+
 
 public class Main {
     
     public static void main(String[] args) {
         
-        ArrayList<String> list=new ArrayList<>();//Creating arraylist  
-		list.add("Ravi");//Adding object in arraylist  
-                list.add("Vijay");  
-		list.add("Ravi");  
-		list.add("Ajay");  
-		//Traversing list through Iterator  
-		Iterator<String> itr=list.iterator(); 
-                55m.out.println(itr.next());
-                55m.out.println(itr.hasNext());
-                55m.out.println(itr.next());
-		while(itr.hasNext()){  
-		System.out.println(itr.next()); 
+         int[][] chs = new int[2][]; chs[0] = new int[2];
+chs[1] = new int[5];
+int i = 97;
+for (int a = 0; a < chs.length; a++) { for (int b = 0; b < chs.length; b++) {
+chs[a][b] =  i;
+i++; }
+}
+for (int[] ca : chs) { for (int c : ca) {
+System.out.print(c + " "); }
+System.out.println(); }
+
+  
     }
 
      
 }
 
-}
+
+
+

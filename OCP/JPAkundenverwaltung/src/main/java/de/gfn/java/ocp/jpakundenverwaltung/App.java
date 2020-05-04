@@ -63,3 +63,6 @@ public class App {
 }
 
 // jdbc:mysql://localhost:8889/jpa_kundenverwaltung?autoReconnect=true&serverTimezone=CET&useSSL=False&allowPublicKeyRetrieval=true
+
+// jdbc:mysql://localhost:3306/photo_app?autoReconnect=true&serverTimezone=CET&useSSL=False&allowPublicKeyRetrieval=true
+

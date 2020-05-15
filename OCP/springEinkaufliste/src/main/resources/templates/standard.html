@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="/webjars/bootstrap/4.4.1-1/css/bootstrap.min.css"/>
+
+    </head>
+    <body>
+        <div class="container">
+            <header></header>
+
+
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a class="navbar-brand" href="/" th:href="@{/}">Einkaufliste</a>
+                
+                
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li th:classappend ="${#request.getRequestURI() =='/' ? 'active' : ''}" class="nav-item">
+                            <a class="nav-link" href="/" th:href="@{/}">Home </a>
+                        </li>
+                        <li th:classappend ="${#request.getRequestURI() =='/new' ? 'active' : ''}" class="nav-item">
+                            <a class="nav-link" href="/new" th:href="@{/new}">Neu</a>
+                        </li>            
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main th:switch="${produkte}">
+                <div th:case="null">Kein Produkte</div>
+                <div th:case="*">
+                    <div th:if="${produkte.empty}">Kein Produkte</div>
+
+                    <div th:each="produkt: ${produkte}">
+                        <span th:text="${produkt.id}"></span>
+                        <span th:text="${produkt.name}"></span>
+                        <span th:text="${produkt.anzahl}"></span>
+                        <a th:href="@{/delete/{id}(id=${produkt.id})}" class="btn btn-danger">Loschen</a>
+                        <a th:href="@{/edit/{id}(id=${produkt.id})}" class="btn btn-warning">Bearbeiten</a>
+                    </div>
+                </div>
+
+                <a href="/new" class="btn btn-success">Neues Produkt hinzufugen</a>
+            </main>
+
+            <aside>
+                <div th:replace="${produkte.empty} ? ~{fragments.html :: div.noData} : ~{fragments.html :: div.data}"></div>
+            </aside>
+            <footer></footer>
+        </div>
+
+        <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/webjars/bootstrap/4.4.1-1/js/bootstrap.min.js"></script>
+    </body>
+</html>

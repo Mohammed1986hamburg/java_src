@@ -34,6 +34,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        
+        assert args.length > 2:" more 2";
 
         StringBuilder sb = new StringBuilder("Hello");
         doString1(sb);

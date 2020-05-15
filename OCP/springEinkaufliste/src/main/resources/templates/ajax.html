@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="standard.html :: head">
+        <title>TODO supply a title</title>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <nav th:replace="standard.html :: nav"></nav>
+            <main class='pt-4'>
+                <form id="ajaxForm" action="/rest/save" method="post" th:action="@{/rest/save}">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="anzahl" placeholder="Anzahl">
+                    </div>
+                    <buttom class="btn btn-success">Speichen</buttom>
+                </form>
+            </main>
+            <aside></aside>
+
+            <footer></footer>
+
+            <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+            <script src="/webjars/bootstrap/4.4.1-1/js/bootstrap.min.js"></script>
+
+            <script th:inline='javascript'>
+
+                $('#ajaxForm').submit(function (event) {
+                event.preventDefault;
+                
+               
+                $.ajax({
+                url:'/rest/save',
+                        type: 'post',
+                        data: JSON.stringify({"name":$('#name').val(),"anzahl":$('#anzahl').val()}),
+                        dataType: 'json'
+                }).done(funtion(resp){
+                       });
+                   
+                        
+                });
+                
+
+            </script>
+        </div>
+    </body>
+</html>

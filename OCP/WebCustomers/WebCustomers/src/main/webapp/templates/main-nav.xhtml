@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsf/core">
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+       
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <h:link outcome="home" class="nav-link">Home <span class="sr-only">(current)</span></h:link>
+                </li>
+                <li class="nav-item">
+                    <h:link outcome="products" class="nav-link">#{uic.products}</h:link>
+                </li>
+                
+                <li class="nav-item">
+                    <h:link outcome="customers" class="nav-link">#{uic.customers}</h:link>
+                </li>
+                
+                <h:form class="form-inline my-2 my-lg-0">
+                    <h:selectOneMenu value="#{language.current}" onchange="submit()" class="form-control">
+                        <c:selectItems value="#{language.locales}"  />
+                    </h:selectOneMenu>
+                </h:form>
+            </ul>
+        </div>
+    </nav>
+</html>

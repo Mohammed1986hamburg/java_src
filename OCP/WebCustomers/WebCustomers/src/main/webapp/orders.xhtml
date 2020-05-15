@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition template="templates/standard.xhtml">
+            <ui:define name="nav">
+                <ui:include src="/templates/main-nav.xhtml"/>
+            </ui:define>
+
+            <ui:define name="main">
+                <h2>Order für #{orders.currentCustomer.firstname} #{orders.currentCustomer.lastname}</h2>
+            </ui:define>
+
+            <ui:define name="right">
+                
+                <h2>Bestellung</h2> 
+               
+                <h:form>
+                    <div class="form-group">
+                        <label for="orderdAt">Datum:</label>
+                        <h:inputText class="form-control" value="#{orders.current.orderdAt}" converter="DateConverter" id="orderdAt" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <p:selectManyCheckbox value="#{orders.current.products}">
+                            <c:selectItems value="#{products.productList}" var="p" itemLabel="#{p.name}" />
+                        </p:selectManyCheckbox>
+                    </div>
+                   
+                    <h:commandButton value="#{uic.form_save}" action="#{orders.addOrder(orders.current)}" class="btn btn-success" />
+                </h:form>
+                
+            </ui:define>
+    </ui:composition>
+
+</html>
+

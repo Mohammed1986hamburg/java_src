@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    </head>
+    <body>
+        
+        <div class="container">
+            <header></header>
+            
+            <nav></nav>
+            
+            <main th:switch="${produkte}">
+                <div th:case="null">Aktuell sind keine Produkte auf deiner Liste.</div>
+                <div th:case="*">
+                    <div th:if="${produkte.empty}">Aktuell sind keine Produkte auf deiner Liste.</div>
+                    <div th:each="produkt: ${produkte}">
+                        <span th:text="${produkt.id}"></span>
+                        <span th:text="${produkt.name}"></span>
+                        <span th:text="${produkt.anzahl}"></span>
+                        <a th:href="@{/delete/{id}(id=${produkt.id})}" class="btn btn-danger">Löschen</a>
+                    </div>
+                </div>
+                
+                <a href="/new" class="btn btn-success">Neues Produkt hinzufügen</a>
+                
+            </main>
+            
+            <aside></aside>
+            <footer></footer>
+        </div>
+        
+        <script src="/js/jquery-3.4.1.slim.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+
+
+    <ui:composition template="templates/standard.xhtml">
+        <ui:define name="nav">
+            <ui:include src="/templates/main-nav.xhtml"/>
+        </ui:define>
+
+        <ui:define name="main">
+            
+            <h2>Alle Kunden</h2>
+            
+            <h:dataTable class="table" value="#{customer.customerList}" var="c">
+                <h:column>                 
+                    <f:facet name="header">ID</f:facet>
+                        #{c.id}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">#{uic.tab_name}</f:facet>
+                        <h:form>
+                            <h:commandButton action="#{orders.addFor(c)}" class="btn btn-link" value="#{c.firstname} #{c.lastname}" />
+                        </h:form>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">#{uic.tab_birthdate}</f:facet>
+                        <h:outputText value="#{c.birthdate}" converter="DateConverter" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">#{uic.tab_address}</f:facet>
+                        #{c.address}
+                </h:column>
+                <h:column>
+                    <h:form>
+                        <h:commandButton value="#{uic.form_edit}" class="btn btn-warning" action="#{customer.edit(c)}" />
+                        <h:commandButton value="#{uic.form_delete}" class="btn btn-danger" action="#{customer.delete(c)}" />
+                    </h:form>
+                </h:column>
+            </h:dataTable>
+        </ui:define>
+
+        <ui:define name="right">
+            
+            <h2>Kunde</h2>
+            
+            <h:form>
+                    <h:inputHidden value="#{customer.curCastomer.id}" />
+                
+                    <div class="form-group">
+                        <h:message for="firstname" />
+                        <h:inputText id="firstname" value="#{customer.curCastomer.firstname}" class="form-control" required="true" requiredMessage="#{uic.msg_required}">
+                        </h:inputText>
+                    </div>
+                    
+                    <div class="form-group">
+                        <h:message for="lastname" />
+                        <h:inputText id="lastname" value="#{customer.curCastomer.lastname}" class="form-control" required="true" requiredMessage="#{uic.msg_required}">
+                        </h:inputText>
+                    </div>
+                    
+                    <div class="form-group">
+                        <h:message for="birthdate" />
+                        <h:inputText id="birthdate" value="#{customer.curCastomer.birthdate}" converter="DateConverter" class="form-control">
+                        </h:inputText>
+                    </div>
+                    
+                    <h:commandButton action="#{customer.save(customer.curCastomer)}" value="Speichern" class="btn btn-success" />
+                </h:form>
+
+        </ui:define>
+    </ui:composition>
+
+</html>
+

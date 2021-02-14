@@ -5,6 +5,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 
 /**
@@ -24,6 +25,7 @@ public class UserEntity implements Serializable {
     private String userId;
 
     @Column(nullable = false, length = 50)
+//    @NotNull(message = "firstname is required")
     private String firstName;
 
     @Column(nullable = false, length = 50)
